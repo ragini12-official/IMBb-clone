@@ -9,3 +9,9 @@ export default function MenuItem({title, address, Icon}) {
     </Link>
   )
 }
+
+/**
+ * On clicking the About MenuItem, the url '/about' is generated as is configured here.
+ * But we haven't explicitly attached any component against that route. Then how does
+ * it know which component/page is supposed to be rendered?
+ */
