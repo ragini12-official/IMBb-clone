@@ -3,10 +3,9 @@ import Image from "next/image";
 import { FiThumbsUp } from "react-icons/fi";
 
 export default function Card({ result }) {
-    console.log(result.id);
-
+    
     return (
-        <div className="hover:opacity-90 transition-opacity duration-200 cursor-pointer m-2 sm:hover:shadow-slate-600 sm:hover:dark:shadow-slate-900 sm:shadow-lg rounded-lg">
+        <div key={result.id} className="hover:opacity-90 transition-opacity duration-200 cursor-pointer m-2 sm:hover:shadow-slate-600 sm:hover:dark:shadow-slate-900 sm:shadow-lg rounded-lg">
             <Link href={`/movie/${result.id}`}>
                 <Image
                     src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}

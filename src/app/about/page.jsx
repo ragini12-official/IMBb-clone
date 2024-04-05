@@ -11,8 +11,4 @@ export default function About() {
   )
 }
 
-/**
- * In the application, after creating the page.jsx in the about folder,
- * I don't see any apparent way of linking the component with the <layout className="tsx".
- * But the page is still successfully being rendered. How?
- */
+

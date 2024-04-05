@@ -11,10 +11,10 @@ export default function NavbarItem({ title, param }) {
 
   // console.log("genre=", genre);
   console.log(searchParams.has('genre'));
-  console.log("param=", param);
+  // console.log("param=", param);
 
   return (
-    <div>
+    <div key={title}>
       <Link 
       className={`hover:text-amber-600 font-semibold
       ${genre === param
