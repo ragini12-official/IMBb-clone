@@ -14,7 +14,6 @@ export default async function SearchPage({params}) {
     // console.log(await res.text());
     const data = await res.json();
     // console.log("DATA", data);
-
     const results = data.results;
     console.log(results);
     // console.log(results);
